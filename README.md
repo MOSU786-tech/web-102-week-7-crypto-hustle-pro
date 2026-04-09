@@ -1,16 +1,49 @@
-# React + Vite
+# Crypto Hustle Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Crypto Hustle Pro is a React + Vite crypto dashboard built for the WEB-102 Week 7 lab. It shows a searchable list of coins, detail pages for each coin, a not-found route, crypto news, and a 30-day Recharts price history view.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Searchable crypto list on the home page
+- Dynamic detail routes with React Router
+- Coin detail pages at `/coinDetails/:symbol`
+- Custom not-found page for invalid routes
+- 30-day price chart using Recharts
+- Live data from the CryptoCompare API
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install dependencies:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Create a local env file from the example:
+
+```bash
+copy .env.example .env.local
+```
+
+3. Add your CryptoCompare API key to `.env.local`:
+
+```env
+VITE_APP_API_KEY=your_api_key_here
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Notes
+
+- `.env.local` is ignored by Git so your real API key stays private.
+- If the app does not pick up a new API key right away, restart the Vite dev server.
