@@ -28,7 +28,7 @@ copy .env.example .env.local
 3. Add your CryptoCompare API key to `.env.local`:
 
 ```env
-VITE_APP_API_KEY=your_api_key_here
+VITE_APP_API_KEY=139dff000b58b51ca8141388df9653256b69140f7932547f3c1a08d211e7c7d8
 ```
 
 4. Start the development server:
