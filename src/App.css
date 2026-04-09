@@ -1,0 +1,361 @@
+.app-shell {
+  min-height: 100svh;
+  background:
+    radial-gradient(circle at top, rgba(249, 115, 22, 0.18), transparent 35%),
+    linear-gradient(180deg, #101827 0%, #172033 42%, #f7f3eb 42%, #f7f3eb 100%);
+}
+
+.whole-page {
+  margin-left: 25%;
+  min-height: 100svh;
+  padding: 40px 32px 48px;
+  box-sizing: border-box;
+}
+
+.whole-page h1 {
+  color: #f8fafc;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: clamp(2rem, 3vw, 3.25rem);
+}
+
+.intro-text {
+  color: #cbd5e1;
+  max-width: 640px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.search-input {
+  width: min(100%, 420px);
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.8);
+  color: #f8fafc;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 24px;
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
+}
+
+.coin-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.loading-card {
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #0f172a;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+.error-card {
+  margin-bottom: 24px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(127, 29, 29, 0.95);
+  color: #fef2f2;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+.main-list {
+  padding: 0;
+  border-radius: 18px;
+}
+
+.coin-link {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #0f172a;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.coin-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.2);
+}
+
+.coin-link:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.coin-name {
+  min-width: 0;
+}
+
+.coin-price {
+  white-space: nowrap;
+}
+
+.icons {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.sidenav {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #232323;
+  padding: 15px 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 2;
+  background:
+    radial-gradient(circle at top, rgba(249, 115, 22, 0.2), transparent 40%),
+    linear-gradient(180deg, #0f172a 0%, #111827 100%);
+}
+
+.sidenav h1,
+.sidenav h2,
+.sidenav a {
+  color: #f8fafc;
+}
+
+.brand-link {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin-top: 10px;
+}
+
+.sidebar-copy {
+  color: #cbd5e1;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.crypto-news {
+  width: 100%;
+}
+
+.crypto-news ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.news-item {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.news-item a {
+  display: block;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.detail-page,
+.not-found-page {
+  display: grid;
+  gap: 22px;
+}
+
+.detail-header-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+.detail-header-copy h1 {
+  color: #0f172a;
+  margin-top: 0;
+}
+
+.back-link {
+  width: fit-content;
+  text-decoration: none;
+  color: #f8fafc;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+
+.detail-hero {
+  display: grid;
+  gap: 24px;
+}
+
+.detail-title-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.detail-title-group h1 {
+  margin-bottom: 8px;
+}
+
+.detail-icon {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 14px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+}
+
+.detail-kicker {
+  margin: 0 0 6px;
+  color: #fdba74;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.detail-price {
+  margin: 0;
+  color: #fed7aa;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.detail-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.stat-card,
+.detail-card,
+.not-found-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+.stat-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #64748b;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.detail-description {
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.coin-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coin-detail-table th,
+.coin-detail-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.coin-detail-table th {
+  width: 220px;
+  color: #475569;
+}
+
+.chart-shell {
+  height: 300px;
+}
+
+.chart-copy {
+  margin-top: 0;
+  color: #64748b;
+}
+
+.chart-error {
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  .sidenav {
+    position: static;
+    width: 100%;
+    height: auto;
+    min-height: 240px;
+  }
+
+  .whole-page {
+    margin-left: 0;
+    padding: 24px 16px 40px;
+  }
+
+  .detail-meta-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .coin-link {
+    grid-template-columns: auto 1fr;
+  }
+
+  .coin-price {
+    grid-column: 1 / -1;
+    padding-left: 48px;
+  }
+
+  .detail-title-group {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .detail-header-card {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}
